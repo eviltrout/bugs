@@ -1,0 +1,26 @@
+<table class='table'>
+  <tr>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Last Seen At</th>
+  </tr>
+  {{#each}}
+    <tr>
+      <td>{{#link-to 'bugs.show' this}}{{name}}{{/link-to}}</td>
+      <td>
+        {{#if status}}
+          {{status}}
+        {{else}}
+          &mdash;
+        {{/if}}
+      </td>
+      <td>
+        {{#if status}}
+          {{lastSeenAt}}
+        {{else}}
+          &mdash;
+        {{/if}}
+      </td>
+    </tr>
+  {{/each}}
+</table>
