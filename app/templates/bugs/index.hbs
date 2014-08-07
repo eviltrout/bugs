@@ -7,20 +7,8 @@
   {{#each}}
     <tr>
       <td>{{#link-to 'bugs.show' this}}{{name}}{{/link-to}}</td>
-      <td>
-        {{#if status}}
-          {{status}}
-        {{else}}
-          &mdash;
-        {{/if}}
-      </td>
-      <td>
-        {{#if status}}
-          {{lastSeenAt}}
-        {{else}}
-          &mdash;
-        {{/if}}
-      </td>
+      <td>{{pretty status}}</td>
+      <td>{{pretty lastSeenAt}}</td>
     </tr>
   {{/each}}
 </table>
