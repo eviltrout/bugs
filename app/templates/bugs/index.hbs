@@ -1,14 +1,28 @@
 <table class='table'>
-  <tr>
-    <th>Name</th>
-    <th>Status</th>
-    <th>Last Seen At</th>
-  </tr>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Size</th>
+      <th>Status</th>
+      <th>Last Seen At</th>
+    </tr>
+  </thead>
+  <tbody>
   {{#each}}
     <tr>
       <td>{{#link-to 'bugs.show' this}}{{name}}{{/link-to}}</td>
+      <td>{{pretty size}}mm</td>
       <td>{{pretty status}}</td>
       <td>{{pretty lastSeenAt}}</td>
     </tr>
   {{/each}}
+  </tbody>
+  <tfoot>
+    <tr>
+      <th></th>
+      <th>Average: {{averageSize}}mm</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </tfoot>
 </table>
