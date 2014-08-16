@@ -1,6 +1,6 @@
 # Bugs
 
-This README outlines the details of collaborating on this Ember application.
+This is a sample bug tracking application for use in a screencast about debugging ember applications.
 
 ## Installation
 
@@ -12,14 +12,5 @@ This README outlines the details of collaborating on this Ember application.
 
 * `ember server`
 * Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
 
 For more information on using ember-cli, visit [http://iamstef.net/ember-cli/](http://iamstef.net/ember-cli/).
